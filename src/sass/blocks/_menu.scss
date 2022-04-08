@@ -8,16 +8,19 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	cursor: pointer;
+
 	span {
 		display: block;
 		width: 30px;
 		height: 3px;
 		background: #151812;
 	}
+
 	span.long {
-		width: 36px;       
+		width: 36px;
 	}
 }
+
 .menu {
 	position: fixed;
 	top: 0;
@@ -27,13 +30,15 @@
 	z-index: 10;
 	visibility: hidden;
 	opacity: 0;
-	transition:  all 0.6s;
+	transition: all 0.6s;
+
 	&.active {
 		left: 0;
 		visibility: visible;
 		opacity: 1;
 
 	}
+
 	&__block {
 		position: relative;
 		width: 345px;
@@ -44,42 +49,49 @@
 		z-index: 10;
 		// transition: all 0.6s;
 	}
+
 	&__close {
 		position: absolute;
 		top: 25px;
 		right: 25px;
 		cursor: pointer;
 	}
+
 	&__list {
 		list-style-type: none;
 		padding-left: 35px;
 	}
+
 	&__link {
-	position: relative;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 36px;
-	margin-bottom: 15px;
-	&::before {
-		content: '';
-		position: absolute;
-		left: -35px;
-		top: 10px;
-		width: 15px;
-		height: 15px;
-		border-radius: 50%;
-		border: 1px solid #000000;
-		transition: all 0.6s;
-	}
-	&:hover{
-		&:before {
-		background-color: #FFFFFF;
+		position: relative;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		margin-bottom: 15px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			left: -35px;
+			top: 10px;
+			width: 15px;
+			height: 15px;
+			border-radius: 50%;
+			border: 1px solid #000000;
+			transition: all 0.6s;
 		}
-	}
+
+		&:hover {
+			&:before {
+				background-color: #FFFFFF;
+			}
+		}
+
 		a {
 			color: #FFFFFF;
 		}
 	}
+
 	&__social {
 		position: absolute;
 		bottom: 50px;
@@ -90,6 +102,7 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+
 	&__overlay {
 		position: fixed;
 		top: 0;
