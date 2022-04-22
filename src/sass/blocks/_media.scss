@@ -309,6 +309,9 @@
 		&__btn {
 			font-size: 14px;
 		}
+		&__policy {
+			padding-left: 70px;
+		}
 	}
 }
 
@@ -364,7 +367,7 @@
 	}
 
 	.resume {
-		padding-top: 40px;
+		padding: 40px 15px 0 15px;
 
 		&__wrapper {
 			grid-template-columns: 1fr;
@@ -424,11 +427,12 @@
 	}
 
 	.contacts {
-		padding: 50px 5px 50px 5px;
+		padding: 60px 5px 50px 5px;
 
 		&__wrapper {
 			padding: 0;
 			grid-template-columns: 300px;
+			justify-content: center;
 		}
 
 		&__subtitle {
@@ -456,6 +460,7 @@
 		}
 
 		&__policy {
+			padding: 0;
 			transform: translateX(10%);
 		}
 
