@@ -2,10 +2,7 @@
 	.sidepanel {
 		display: none;
 	}
-
 }
-
-
 
 
 @media (max-width: 1200px) {
@@ -42,7 +39,6 @@
 	.price {
 		&__wrapper {
 			padding: 0 15px;
-
 		}
 	}
 
@@ -89,7 +85,7 @@
 		}
 
 		&__form {
-			grid-template: 45px 190px 45px/repeat(2, 240px);
+			grid-template: 45px 190px 45px / 240px 240px;
 			gap: 20px;
 
 		}
@@ -186,7 +182,7 @@
 		}
 
 		&__form {
-			grid-template: 45px 190px 45px/repeat(2, 190px);
+			grid-template: 45px 190px 45px/ 190px 190px;
 			column-gap: 20px;
 		}
 
@@ -299,7 +295,7 @@
 		}
 
 		&__form {
-			grid-template: 45px 190px 45px/repeat(2, 245px);
+			grid-template: 45px 190px 45px/245px 245px;
 		}
 
 		&__triggers {
@@ -357,9 +353,11 @@
 	.about {
 		&__wrapper {
 			grid-template: 340px auto auto / 1fr;
-
+			
 		}
-
+		.about__descr {
+			padding: 0 10px;
+		}
 		&__skills {
 			grid-template-columns: 1fr;
 			justify-items: center;
